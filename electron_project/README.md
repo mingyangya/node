@@ -1,18 +1,3 @@
-
-# 通过shell 创建目录，生成项目基础结构
-
-## 写在前面
-
-！需要node环境支持
-
-```bash
-node shell.js
-```
-
-项目具体结构 见 electron-project
-
-
-
 ## 基于koa2 + electron 构建桌面应用
 
 ### 目录结构

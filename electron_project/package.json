@@ -1,0 +1,30 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo "Error: no test specified" && exit 1",
+    "start": "cross-env NODE_ENV=start  nodemon app.js",
+    "start:zip" : "",
+    "dev": "cross-env NODE_ENV=development  electron . && nodemon app.js ",
+    "build": "cross-env NODE_ENV=production  electron-packager . app --win --out dist --arch=x64  --version 1.0.0 --overwrite --asar ",
+    "build:unpackDir": "cross-env NODE_ENV=production  electron-packager . app --win --out dist --arch=x64  --version 1.0.0 --overwrite--asar.unpackDir mock "
+  },
+  "author": "mingyang",
+  "license": "ISC",
+  "dependencies": {
+    "co-views": "^2.1.0",
+    "cross-env": "^5.1.3",
+    "ejs": "^2.5.7",
+    "koa": "^2.4.1",
+    "koa-body": "^2.5.0",
+    "koa-router": "^7.3.0",
+    "koa-static-server": "^1.3.3"
+  },
+  "devDependencies": {
+    "electron": "^1.8.3",
+    "electron-packager": "^11.1.0",
+    "nodemon": "^1.8.1"
+  }
+}
